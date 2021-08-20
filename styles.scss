@@ -1,0 +1,94 @@
+:root {
+    --color-pupple-dark-1: #6C00BD;
+    --color-pupple-dark-2: #7800D2;
+    --color-pupple-light-1: #8400E8;
+    --color-pupple-light-2: #A125FF;
+    ///////////////////////////////
+    --color-gold-dark-1: #A09100;
+    --color-gold-dark-2: #C6B500;
+    --color-gold-light-1: #ECD900;
+    --color-gold-light-2: #FFEE27;
+    --color-black: #25033E;
+    --font-primary: 'Poppins', sans-serif;
+    --font-secondary: 'Heebo', sans-serif;
+    --color-tag-color-1: #00B569;
+    --color-tag-bg-1: #00B569;
+    --mb-sm: 2rem;
+    --mb-md: 3rem;
+    --mb-lg: 4rem;
+}
+
+$bp-largest: 75em; //1200px
+$bp-large: 62.5em; //1000px
+$bp-medium: 50em; //800px
+$bp-small: 37.5em; //600px
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+@font-face {
+    font-family: "Product Sans";
+    src: url("/fonts/Product\ Sans\ Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Product Sans";
+    src: url("/fonts/Product\ Sans\ Bold\ Italic.ttf");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Product Sans";
+    src: url("/fonts/Product\ Sans\ Italic.ttf");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Product Sans";
+    src: url("/fonts/Product\ Sans\ Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 50%;
+    }
+}
+
+body {
+    line-height: 1.7rem;
+    font-family: var(--font-primary);
+    font-weight: 300;
+    width: 100%;
+    height: 100%;
+    font-family: "Product Sans", sans-serif;
+    &>* {
+        padding: 0em 8rem;
+    }
+    // position: relative;
+}
+
+header {
+    background-image: url(/img/header.png);
+    // background-attachment: fixed, fixed;
+    background-repeat: repeat-y, no-repeat;
+    background-position: right center;
+    padding-top: 5rem;
+    // padding-bottom: 15rem;
+    display: flex;
+    flex-direction: column;
+}
