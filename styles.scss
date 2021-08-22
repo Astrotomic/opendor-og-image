@@ -19,35 +19,32 @@ $bp-small: 37.5em; //600px
 }
 
 @font-face {
-    font-family: "Product Sans";
-    src: url("/fonts/Product\ Sans\ Bold.ttf");
-    font-weight: 700;
+    font-family: "SF Pro Display";
+    src: url("/fonts/SFProDisplayBlack.otf") format("opentype");
 }
 
 @font-face {
-    font-family: "Product Sans";
-    src: url("/fonts/Product\ Sans\ Bold\ Italic.ttf");
+    font-family: "SF Pro Text";
+    src: url("/fonts/SFProTextBlack.otf");
     font-weight: 700;
     font-style: italic;
     font-display: swap;
 }
 
-@font-face {
-    font-family: "Product Sans";
-    src: url("/fonts/Product\ Sans\ Italic.ttf");
-    font-weight: 400;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Product Sans";
-    src: url("/fonts/Product\ Sans\ Regular.ttf");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
+// @font-face {
+//     font-family: "Product Sans";
+//     src: url("/fonts/Product\ Sans\ Italic.ttf");
+//     font-weight: 400;
+//     font-style: italic;
+//     font-display: swap;
+// }
+// @font-face {
+//     font-family: "Product Sans";
+//     src: url("/fonts/Product\ Sans\ Regular.ttf");
+//     font-weight: normal;
+//     font-style: normal;
+//     font-display: swap;
+// }
 html {
     font-size: 62.5%;
     box-sizing: border-box;
