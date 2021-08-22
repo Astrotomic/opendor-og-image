@@ -80,15 +80,19 @@ body {
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 5rem;
         // background-color: green;
+        padding-top: 5rem;
     }
     &__folder {
         position: relative;
-        height: 100%;
-        width: 100%;
+        width: 50rem;
+        height: 75rem;
+        margin-left: 16rem;
+        // margin-top: 5rem;
+        // background-color: grey;
         &__front-page {
             position: absolute;
-            width: 40rem;
-            height: 60rem;
+            width: 100%;
+            height: 100%;
             left: 0px;
             top: 4.485rem;
             background: rgba(255, 255, 255, 0.7);
@@ -104,6 +108,7 @@ body {
                 width: 15rem;
                 height: 15rem;
                 margin-bottom: 2.5rem;
+                margin-top: 3rem;
             }
             &--opendor-logo {
                 // position: absolute;
@@ -143,8 +148,8 @@ body {
         }
         &__back-page {
             position: absolute;
-            width: 36.5rem;
-            height: 60rem;
+            width: 45rem;
+            height: 100%;
             left: 0px;
             top: 4.485rem;
             background: rgba(255, 255, 255, 0.4);
@@ -152,16 +157,18 @@ body {
             backdrop-filter: blur(30px);
             /* Note: backdrop-filter has minimal browser support */
             border-radius: 4rem;
-            transform: matrix(1, -0.19, 0, 0.98, 0, -35);
+            transform: matrix(1, -0.19, 0, 0.98, 0, -45);
             // background-color: grey;
         }
     }
     &__desc {
-        // width: 41.3rem;
+        height: 75rem;
+        width: 44rem;
+        align-self: flex-end;
         display: flex;
         justify-content: flex-end;
         flex-direction: column;
-        background-color: blue;
+        // background-color: blue;
         margin-bottom: 10rem;
         &--headline {
             font-family: SF Pro Display;
