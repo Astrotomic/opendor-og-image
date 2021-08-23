@@ -1,0 +1,39 @@
+{
+    "name": "opendor-html-markup",
+    "version": "1.0.0",
+    "description": "opendor html markup",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "compile": "node-sass styles.scss style.css -w",
+        "start": "live-server",
+        "compile:sass": "node-sass styles.scss style.comp.css",
+        "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' style.comp.css -o style.prefix.css",
+        "compress:css": "node-sass style.prefix.css style.css --output-style compressed",
+        "build:css": "npm-run-all compile:sass prefix:css compress:css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Astrotomic/opendor-og-image.git"
+    },
+    "keywords": [
+        "css",
+        "html",
+        "sass",
+        "opendor.me"
+    ],
+    "author": "harmless",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Astrotomic/opendor-og-image/issues"
+    },
+    "homepage": "https://github.com/Astrotomic/opendor-og-image#readme",
+    "devDependencies": {
+        "autoprefixer": "^10.0.1",
+        "concat": "^1.0.3",
+        "npm-run-all": "^4.1.5",
+        "postcss": "^8.1.4",
+        "postcss-cli": "^8.1.0",
+        "node-sass": "^4.14.1"
+    }
+}
